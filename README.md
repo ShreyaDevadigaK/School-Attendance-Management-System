@@ -2,9 +2,7 @@
 
 ## 🌐 Live Demo
 
-👉 **[Click here to view the application](https://shreyadevadigak.github.io/School-Attendance-Management-System/)**
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge)](https://shreyadevadigak.github.io/School-Attendance-Management-System/)
+🔗 [Open Live Project](https://shreyadevadigak.github.io/School-Attendance-Management-System/)
 
 ---
 
