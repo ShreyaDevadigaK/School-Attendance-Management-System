@@ -8,9 +8,30 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Student Manegement</title>
+    <title>Student Management</title>
   </head>
   <body>
+
+    <div class="heading" style="position: relative;">
+        <h1>Attendence Management System</h1>
+        <a href="index.html" class="btn btn-danger" id="logout-btn">Logout</a>
+    </div>
+
+    <!-- Stats Section (New Feature) -->
+    <div class="stats-container">
+        <div class="stat-item">
+            <span class="stat-value" id="total-count">0</span>
+            <span class="stat-label">Total Students</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value" id="present-count">0</span>
+            <span class="stat-label">Present</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value" id="absent-count">0</span>
+            <span class="stat-label">Absent</span>
+        </div>
+    </div>
 
     <div class="studentData">
         <form action="" id="form1">
@@ -18,27 +39,30 @@
             <input type="number" placeholder="Number" id="number" required>
             <input type="text" placeholder="City" id="city" required>
             <input type="number" placeholder="Roll No" id="rollNo" required>
-            <input type="submit" class="btn btn-warning">
+            <input type="submit" class="btn btn-primary" id="add-btn" value="Add Student">
         </form>
     </div>
 
+    <!-- Search Bar (New Feature) -->
+    <div class="search-container">
+        <input type="text" id="search" class="search-input" placeholder="Search by name or roll number...">
+    </div>
 
-
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Number</th>
-                    <th>City</th>
-                    <th>Roll No.</th>
-                    <th>Attendence</th>
-                </tr>
-            </thead>
-            <tbody id="tbody">
-
-            </tbody>
-        </table>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Roll No.</th>
+                <th>City</th>
+                <th>Attendance</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <!-- Data will be injected here -->
+        </tbody>
+    </table>
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./student.js"></script>
